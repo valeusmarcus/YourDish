@@ -243,6 +243,10 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.dishes .dish:hover{
+    transform: translateY(-10px);
+}
+
 .dishes .dish img{
     width: 130px;
     height: 120px;
@@ -262,6 +266,12 @@ header {
     padding: 5px 60px;
     border-radius: 6px;
     color: #fff;
+    transition: 0.6s;
+}
+
+.dishes .dish a:hover{
+    background-color: #273e60;
+   
 }
 
 /* Scroollbar css */
@@ -298,6 +308,8 @@ header {
     height: 60vh;
 }
 
+
+
 .about .left {
     width: 40%;
     display: flex;
@@ -308,6 +320,12 @@ header {
 
 .about .left img{
     width: 60%;
+    transition: 0.5s;
+}
+
+.about .left img:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s;
 }
 
 .about .right {
@@ -331,6 +349,8 @@ header {
     padding: 5px 60px;
     background-color: #27ae60;
     border: none;
+    cursor: pointer;
+    transition: 0.6s;
 }
 
 .about .right button a{
@@ -339,6 +359,12 @@ header {
     font-weight: bolder;
     text-transform: capitalize;
 }
+
+.about .right button:hover{
+    background-color: #273e60;
+    transition: 0.6s;
+}
+
 
 /* comment css */
 
@@ -363,6 +389,17 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.comment{
+    transition: 0.5s;
+}
+
+
+
+.comment:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
 
 .comments .comment div {
@@ -443,6 +480,14 @@ header {
     color: #fff;
     background-color: #27ae60;
     border: 1px solid #27ae60;
+    transition: 0.6s;
+}
+
+#reservation form  input[type="submit"]:hover{
+    background-color: #273e60;
+    transition: 0.6s;
+    border: none;
+    border: 1px solid #273e60;
 }
 
 /* footer css */
@@ -476,6 +521,12 @@ footer .services_liste{
     margin: 25px auto;
 }
 
+.service img:hover{
+    cursor: pointer;
+    background-color: #273e60;
+    transition: 0.6s;
+}
+
 .service p {
     color: #333;
 }
@@ -495,6 +546,15 @@ hr{
 
 .footer_texte span{
     color: #27ae60;
+    transition: 0.6s;
+}
+.footer_texte span:hover{
+    background-color: #273e60;
+    cursor: pointer;
+    transition: 0.6s;
+    color: #fff;
+    border: 1px solid #273e60;
+    border-radius: 6px;
 }
 
 .toogle_menu{
@@ -523,7 +583,7 @@ hr{
 
     #home .left {
         width: 90%;
-        padding: 90px 0;
+        padding: 80px 0;
         margin: 20px 0 ;
     }
 
